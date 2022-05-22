@@ -1,7 +1,7 @@
-diff --git a/docroot/modules/contrib/simple_oauth/src/Repositories/ClientRepository.php b/docroot/modules/contrib/simple_oauth/src/Repositories/ClientRepository.php
+diff --git a/src/Repositories/ClientRepository.php b/src/Repositories/ClientRepository.php
 index ec92d54d..3177c9a5 100644
---- a/docroot/modules/contrib/simple_oauth/src/Repositories/ClientRepository.php
-+++ b/docroot/modules/contrib/simple_oauth/src/Repositories/ClientRepository.php
+--- a/src/Repositories/ClientRepository.php
++++ b/src/Repositories/ClientRepository.php
 @@ -63,7 +63,7 @@ public function validateClient($client_identifier, $client_secret, $grant_type)
        return $this->passwordChecker->check($client_secret, $secret);
      }
