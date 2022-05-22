@@ -6,8 +6,8 @@ index ec92d54d..3177c9a5 100644
        return $this->passwordChecker->check($client_secret, $secret);
      }
  
--    return TRUE;
-+    return FALSE;
+-    return FALSE;
++    return TRUE;
    }
  
  }
