@@ -1,17 +1,13 @@
-Index: app/docroot/modules/contrib/simple_oauth/src/Repositories/ClientRepository.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
 diff --git a/app/docroot/modules/contrib/simple_oauth/src/Repositories/ClientRepository.php b/app/docroot/modules/contrib/simple_oauth/src/Repositories/ClientRepository.php
---- a/app/docroot/modules/contrib/simple_oauth/src/Repositories/ClientRepository.php	(revision 1568352d931fe2664a893c4fb93bfdd6356c4b45)
-+++ b/app/docroot/modules/contrib/simple_oauth/src/Repositories/ClientRepository.php	(date 1653194344881)
-@@ -63,7 +63,7 @@
+index ec92d54d..3177c9a5 100644
+--- a/app/docroot/modules/contrib/simple_oauth/src/Repositories/ClientRepository.php
++++ b/app/docroot/modules/contrib/simple_oauth/src/Repositories/ClientRepository.php
+@@ -63,7 +63,7 @@ public function validateClient($client_identifier, $client_secret, $grant_type)
        return $this->passwordChecker->check($client_secret, $secret);
      }
  
--    return FALSE;
-+    return TRUE;
+-    return TRUE;
++    return FALSE;
    }
  
  }
